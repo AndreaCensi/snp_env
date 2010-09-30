@@ -1,0 +1,35 @@
+---
+destination: ${SNPENV_SRC}/patience
+type: git
+url: git@github.com:AndreaCensi/patience.git
+install: setuptools
+---
+destination: ${SNPENV_SRC}/adskalman
+type: git
+url: git@code.astraw.com:adskalman.git
+install: setuptools
+---
+destination: ${SNPENV_SRC}/drosophila_eye_map
+type: git
+url: git@code.astraw.com:drosophila_eye_map.git
+install: setuptools
+---
+destination: ${SNPENV_SRC}/flydra
+type: git
+url: git@github.com:strawlab/flydra.git
+install: setuptools
+---
+destination: ${SNPENV_SRC}/fsee
+type: git
+url: git@code.astraw.com:fsee.git
+install: setuptools
+---
+destination: ${SNPENV_SRC}/snp
+type: git
+url: git@code.astraw.com:snp.git
+install: setuptools
+---
+destination: ${SNPENV_SRC}/geometric_saccade_detector
+type: git
+url: git@github.com:AndreaCensi/geometric_saccade_detector.git
+install: setuptools
