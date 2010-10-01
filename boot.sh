@@ -12,6 +12,7 @@ echo export SNPENV_SRC=\${SNPENV_ROOT}/src >>${config}
 echo export SNPENV_DATA=\${SNPENV_ROOT}/data >>${config}
 echo export SNPENV_OUT=\${SNPENV_ROOT}/results >>${config}
 echo export PATH=\${SNPENV_PREFIX}/bin:\$PATH >>${config}
+echo export LD_LIBRARY_PATH=\${SNPENV_PREFIX}/lib:\$LD_LIBRARY_PATH >>${config}
 echo export PKG_CONFIG_PATH=\${SNPENV_PREFIX}/lib/pkgconfig >>${config}
 
 source ${config}
@@ -38,7 +39,7 @@ echo "Install patience"
 pip install -e "git+git@github.com:AndreaCensi/patience.git#egg=Patience"
 
 
-echo "The next steps can be done with patience. (patience resources.yaml checkout)"
+echo "The next steps can be done with patience. (patience  checkout)"
 read
 
  

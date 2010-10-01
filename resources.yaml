@@ -6,12 +6,12 @@ install: setuptools
 ---
 destination: ${SNPENV_SRC}/adskalman
 type: git
-url: git@code.astraw.com:adskalman.git
+url: git://github.com/astraw/adskalman.git
 install: setuptools
 ---
 destination: ${SNPENV_SRC}/drosophila_eye_map
 type: git
-url: git@code.astraw.com:drosophila_eye_map.git
+url: git://github.com/strawlab/drosophila_eye_map.git
 install: setuptools
 ---
 destination: ${SNPENV_SRC}/flydra
