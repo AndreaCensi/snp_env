@@ -33,3 +33,8 @@ destination: ${SNPENV_SRC}/geometric_saccade_detector
 type: git
 url: git@github.com:AndreaCensi/geometric_saccade_detector.git
 install: setuptools
+---
+destination: ${SNPENV_SRC}/saccade_analysis
+type: git
+url: git@github.com:AndreaCensi/saccade_analysis.git
+install: setuptools
