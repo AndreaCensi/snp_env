@@ -43,3 +43,8 @@ destination: ${SNPENV_SRC}/saccade_analysis
 type: git
 url: git@github.com:AndreaCensi/saccade_analysis.git
 install: setuptools
+---
+destination: ${SNPENV_SRC}/flydra_render
+type: git
+url: git@github.com:AndreaCensi/flydra_render.git
+install: setuptools
