@@ -11,5 +11,6 @@
 <path>/snpsac/src/saccade_analysis/src-python</path>
 <path>/snpsac/src/reprep/src</path>
 <path>/snpsac/src/flydra_render/src</path>
+<path>/snpsac/src/procgraph/src</path>
 </pydev_pathproperty>
 </pydev_project>
