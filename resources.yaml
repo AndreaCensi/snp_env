@@ -53,6 +53,7 @@ destination: ${SNPENV_SRC}/procgraph
 type: git
 url: git@github.com:AndreaCensi/procgraph.git
 install: setuptools
+branch: simplification
 ---
 destination: ${SNPENV_SRC}/saccade_analysis
 type: git
