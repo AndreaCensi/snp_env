@@ -24,6 +24,11 @@ type: git
 url: git@code.astraw.com:fsee.git
 install: setuptools
 ---
+destination: ${SNPENV_SRC}/compmake
+type: git
+url: git@github.com:AndreaCensi/compmake.git
+install: setuptools
+---
 destination: ${SNPENV_SRC}/snp
 type: git
 url: git@code.astraw.com:snp.git
