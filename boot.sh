@@ -21,7 +21,7 @@ cat ${config}
 echo "Now creating virtual environment (press enter)"
 read
 echo Create a new virtual env for python
-virtualenv ${SNPENV_PREFIX}
+virtualenv  ${SNPENV_PREFIX}
 echo source ${SNPENV_PREFIX}/bin/activate >> ${config}
 source ${config}
 

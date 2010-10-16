@@ -2,7 +2,6 @@
 destination: ${SNPENV_ROOT}
 type: git
 url: git@github.com:AndreaCensi/snp_env.git
-install: setuptools
 ---
 destination: ${SNPENV_SRC}/patience
 type: git
