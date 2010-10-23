@@ -12,7 +12,7 @@ flydra_render_saccades --db $DB
 for suffix in "" "_w"; do
 for when in start stop rstop random; do
 
-flydra_render_contrast --db $DB --source saccades_view_${when}_luminance${suffix} --target saccades_view_${when}_contrast_${suffix}
+flydra_render_contrast --db $DB --source saccades_view_${when}_luminance${suffix} --target saccades_view_${when}_contrast${suffix}
 
 done
 done
