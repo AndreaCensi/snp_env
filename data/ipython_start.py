@@ -17,3 +17,8 @@ from procgraph_flydra.values2retina import values2retina
 
 def plot_ret(x):
     pylab.imshow( values2retina(x))
+
+
+from flydra_render.db import *
+
+import tables
