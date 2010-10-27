@@ -25,7 +25,7 @@ install: setuptools
 ---
 destination: ${SNPENV_SRC}/fsee
 type: git
-url: git@code.astraw.com:fsee.git
+url: git@github.com:strawlab/fsee.git
 install: setuptools
 ---
 destination: ${SNPENV_SRC}/compmake
