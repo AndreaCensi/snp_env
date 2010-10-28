@@ -22,3 +22,8 @@ def plot_ret(x):
 from flydra_render.db import *
 
 import tables
+
+try:
+    db = FlydraDB('flydra_db', False)
+except:
+    pass
