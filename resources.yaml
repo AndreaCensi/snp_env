@@ -33,11 +33,6 @@ type: git
 url: git@github.com:AndreaCensi/compmake.git
 install: setuptools
 ---
-#destination: ${SNPENV_SRC}/snp
-#type: git
-#url: git@code.astraw.com:snp.git
-#install: setuptools
-#---
 destination: ${SNPENV_SRC}/geometric_saccade_detector
 type: git
 url: git@github.com:AndreaCensi/geometric_saccade_detector.git
