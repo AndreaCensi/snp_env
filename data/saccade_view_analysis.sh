@@ -14,17 +14,13 @@ flydra_render_saccades --db $DB
 
 # compute contrast
 for suffix in "" "_w"; do
-for when in start stop rstop random; do
+for when in start stop rstop sstop random; do
 
 flydra_render_contrast --db $DB --source saccades_view_${when}_luminance${suffix} --target saccades_view_${when}_contrast${suffix}
 
 done
 done
 
-saccades_view_analysis --db $DB --image luminance
-saccades_view_analysis --db $DB --image contrast
-saccades_view_analysis --db $DB --image luminance_w
-saccades_view_analysis --db $DB --image contrast_w
 
 
 # now do the same thing with hallucinations
@@ -36,7 +32,7 @@ saccades_view_analysis --db $DB --image contrast_w
     
     # compute contrast
     for suffix in "" "_w"; do
-    for when in start stop rstop random; do
+    for when in start stop rstop sstop random; do
 
     flydra_render_contrast --db $DB --source saccades_view_${when}_hluminance${suffix} --target saccades_view_${when}_hcontrast${suffix}
 
@@ -44,11 +40,7 @@ saccades_view_analysis --db $DB --image contrast_w
     done
 
 
-    saccades_view_analysis --db $DB --image hluminance --empty_group_ok
-    saccades_view_analysis --db $DB --image hcontrast  --empty_group_ok
-    saccades_view_analysis --db $DB --image hluminance_w --empty_group_ok
-    saccades_view_analysis --db $DB --image hcontrast_w  --empty_group_ok
-    
+    saccades_view_joint_analysis --db $DB     
     
     
     
