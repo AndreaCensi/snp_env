@@ -1,5 +1,12 @@
 #!/bin/bash
 set -e
+
+echo "Using the following tools (make sure they come from the same dist)"
+echo `which python`
+echo `which virtualenv`
+echo `which pip`
+
+
 echo "I am assuming you installed all the required software. (press enter)"
 read
 config=environment.sh
