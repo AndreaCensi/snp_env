@@ -1,59 +1,59 @@
 ---
-destination: ${SNPENV_ROOT}
+destination: .
 type: git
 url: git@github.com:AndreaCensi/snp_env.git
 ---
-destination: ${SNPENV_SRC}/patience
+destination: ./src/patience
 type: git
 url: git@github.com:AndreaCensi/patience.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/adskalman
+destination: ./src/adskalman
 type: git
 url: git@github.com:astraw/adskalman.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/drosophila_eye_map
+destination: ./src/drosophila_eye_map
 type: git
 url: git@github.com:strawlab/drosophila_eye_map.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/flydra
+destination: ./src/flydra
 type: git
 url: git@github.com:strawlab/flydra.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/fsee
+destination: ./src/fsee
 type: git
 url: git@github.com:strawlab/fsee.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/compmake
+destination: ./src/compmake
 type: git
 url: git@github.com:AndreaCensi/compmake.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/geometric_saccade_detector
+destination: ./src/geometric_saccade_detector
 type: git
 url: git@github.com:AndreaCensi/geometric_saccade_detector.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/reprep
+destination: ./src/reprep
 type: git
 url: git@github.com:AndreaCensi/reprep.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/procgraph
+destination: ./src/procgraph
 type: git
 url: git@github.com:AndreaCensi/procgraph.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/saccade_analysis
+destination: ./src/saccade_analysis
 type: git
 url: git@github.com:AndreaCensi/saccade_analysis.git
 install: setuptools
 ---
-destination: ${SNPENV_SRC}/flydra_render
+destination: ./src/flydra_render
 type: git
 url: git@github.com:AndreaCensi/flydra_render.git
 install: setuptools
