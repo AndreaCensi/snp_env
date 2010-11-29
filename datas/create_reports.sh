@@ -24,13 +24,27 @@ set -x
 ros="Dananassae,Darizonae,Dhydei,Dmelanogaster,Dmojavensis,Dpseudoobscura"
 peter="blueFilter,circularPolarizer,circularPolarizercloudy,grayFilter,grayFiltercloudy,indoorhalogen,noFilter,noFiltercloudy"
 mama="mamaramaposts,mamaramanoposts"
-groups="${ros},${peter},${mama}"
+
 reportdir="saccade_report"
 
-configurations=use_for_report,filt_butter_default-amp_th_10-th_4
+groups="${ros},${peter},${mama}"
 combid=all
+configurations=use_for_report,filt_butter_default-amp_th_10-th_4
+
+# sac_master_plot --flydra_db import_db \
+#                 --groups "${groups}"  \
+#                 --configurations "${configurations}" \
+#                 --report $reportdir \
+#                 --combid $combid
+                
+groups="Dmelanogaster"
+combid=Dmelanogaster_tethered
+configurations=use_for_report,filt_butter_default-amp_th_10-th_4
+
 sac_master_plot --flydra_db import_db \
                 --groups "${groups}"  \
                 --configurations "${configurations}" \
                 --report $reportdir \
-                --combid $combid
+                --combid $combid --interactive
+                
+                
