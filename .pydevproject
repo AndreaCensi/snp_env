@@ -5,13 +5,11 @@
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">python 2.6 snp_env</pydev_property>
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.6</pydev_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
-<path>/snpsac/src/flydra</path>
 <path>/snpsac/src/geometric_saccade_detector/src</path>
 <path>/snpsac/src/saccade_analysis/src-python</path>
 <path>/snpsac/src/reprep/src</path>
 <path>/snpsac/src/flydra_render/src</path>
 <path>/snpsac/src/procgraph/src</path>
 <path>/snpsac/src/compmake</path>
-<path>/snpsac/src/fsee</path>
 </pydev_pathproperty>
 </pydev_project>
