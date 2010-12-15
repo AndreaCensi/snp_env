@@ -48,6 +48,11 @@ type: git
 url: git@github.com:AndreaCensi/procgraph.git
 install: setuptools
 ---
+destination: ./src/contracts
+type: git
+url: git@github.com:AndreaCensi/contracts.git
+install: setuptools
+---
 destination: ./src/saccade_analysis
 type: git
 url: git@github.com:AndreaCensi/saccade_analysis.git

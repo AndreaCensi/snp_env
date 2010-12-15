@@ -5,18 +5,19 @@ set -e
 db=../import_db
 
 # Import new data from ros
-sac_import_matlab_ros --flydra_db $db --saccade_data ros_new_data
+sac_import_matlab_ros --db $db --saccade_data forAndrea_20101130/data/checkered_100fps/
+
 # Import old processed data 
-# sac_import_matlab_andrea --verbose --flydra_db $db --saccade_data matlab_processed
+sac_import_matlab_andrea --verbose --db $db --saccade_data matlab_processed
+
 # Import mamarama data (this could be made much better)
-# sac_import_matlab_andrea --verbose --flydra_db $db --saccade_data mamarama
+sac_import_matlab_andrea --verbose --db $db --saccade_data mamarama
 
-#pickle=weir_some.pkl
+# Import Peter's raw data
 pickle=weir.pkl
-#sac_import_peter --flydra_db $db --peters_pickle $pickle
+sac_import_peter --db $db --peters_pickle $pickle
 
 
-sac_choose_version --db ../import_db
+sac_choose_version --db $db
 
-
-flydra_db_stats --db ../import_db 
+flydra_db_stats --db $db
