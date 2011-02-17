@@ -11,5 +11,6 @@
 <path>/snpsac/src/flydra_render/src</path>
 <path>/snpsac/src/procgraph/src</path>
 <path>/snpsac/src/compmake</path>
+<path>/snpsac/src/contracts/src</path>
 </pydev_pathproperty>
 </pydev_project>
