@@ -1,3 +1,4 @@
+
 #!/bin/bash
 set -e
 set -x
@@ -28,23 +29,35 @@ mama="mamaramaposts,mamaramanoposts"
 reportdir="saccade_report"
 
 groups="${ros},${peter},${mama}"
-combid=all
-configurations=use_for_report,filt_butter_default-amp_th_10-th_4
-
-# sac_master_plot --flydra_db import_db \
-#                 --groups "${groups}"  \
-#                 --configurations "${configurations}" \
-#                 --report $reportdir \
-#                 --combid $combid
-                
-groups="Dmelanogaster"
-combid=Dmelanogaster_tethered
-configurations=use_for_report,filt_butter_default-amp_th_10-th_4
+combid=detector_comparison-all
+configurations=andrea_detector,ros_detector
 
 sac_master_plot --flydra_db import_db \
                 --groups "${groups}"  \
                 --configurations "${configurations}" \
                 --report $reportdir \
-                --combid $combid --interactive
+                --combid $combid \
+                --interactive
                 
-                
+groups="Dmelanogaster"
+combid=detector_comparison-melanogaster
+configurations=andrea_detector,ros_detector
+
+sac_master_plot --flydra_db import_db \
+                --groups "${groups}"  \
+                --configurations "${configurations}" \
+                --report $reportdir \
+                --combid $combid \
+                --interactive
+
+# All configurations for Melanogaster
+groups="Dmelanogaster"
+combid=Dmelanogaster_tethered_all
+configurations=all
+# 
+# sac_master_plot --flydra_db import_db \
+#                 --groups "${groups}"  \
+#                 --configurations "${configurations}" \
+#                 --report $reportdir \
+#                 --combid $combid --interactive
+# 
