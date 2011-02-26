@@ -62,3 +62,8 @@ destination: ./src/flydra_render
 type: git
 url: git@github.com:AndreaCensi/flydra_render.git
 install: setuptools
+---
+destination: ./src/flydra_db
+type: git
+url: git@github.com:strawlab/flydra_db.git
+install: setuptools
