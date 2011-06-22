@@ -28,10 +28,6 @@ type: git
 url: git@github.com:strawlab/fsee.git
 install: setuptools
 ---
-dir: src/contracts
-url: git@github.com:AndreaCensi/contracts.git
-install: setuptools
----
 destination: ./src/compmake
 type: git
 url: git@github.com:AndreaCensi/compmake.git
