@@ -7,9 +7,16 @@ OUT_DIR=${SNPENV_DATA}/reports/201106/
 TMP_DIR=${SNPENV_DATA}/processed/201106/geo_sac_detect
 DB_DIR=${SNPENV_DATA}/processed/201106/flydra_db
 
-# geo_sac_detect --output ${TMP_DIR} ${INPUT_DIR}
-# geo_sac_to_flydradb --db ${DB_DIR} ${TMP_DIR}
-sac_spontaneous_analysis --db ${DB_DIR} --outdir ${OUT_DIR}/spontaneous_analysis
+# Filter data, put in DB
+echo flydra_render_filter --db ${DB_DIR} --smooth ${INPUT_DIR}
+
+sac_density_report --db ${DB_DIR} --outdir ${OUT_DIR}/density --group nopost
+echo sac_density_report --db ${DB_DIR} --outdir ${OUT_DIR}/density --group posts
 
 
-# geo_sac_compact $TMP_DIR
+# Extract saccades
+echo geo_sac_detect --output ${TMP_DIR} ${INPUT_DIR}
+echo geo_sac_to_flydradb --db ${DB_DIR} ${TMP_DIR}
+
+# Analyze saccades
+echo sac_spontaneous_analysis --db ${DB_DIR} --outdir ${OUT_DIR}/spontaneous_analysis 
