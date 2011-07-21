@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-set -x
+#set -x
 
 INPUT_DIR=${SNPENV_DATA}/source/landing
 OUT_DIR=${SNPENV_DATA}/reports/201106/
@@ -10,7 +10,8 @@ DB_DIR=${SNPENV_DATA}/processed/201106/flydra_db
 # Filter data, put in DB
 echo flydra_render_filter --db ${DB_DIR} --smooth ${INPUT_DIR}
 
-sac_density_report --db ${DB_DIR} --outdir ${OUT_DIR}/density --group nopost
+#sac_density_report --db ${DB_DIR} --outdir ${OUT_DIR}/density --group nopost
+sac_density_report --compmake_command "remake *joint* *report*" --db ${DB_DIR} --outdir ${OUT_DIR}/density --group nopost
 echo sac_density_report --db ${DB_DIR} --outdir ${OUT_DIR}/density --group posts
 
 
