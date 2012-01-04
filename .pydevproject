@@ -2,7 +2,7 @@
 <?eclipse-pydev version="1.0"?>
 
 <pydev_project>
-<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">snp_env_epd_7.0</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">usrpyplus</pydev_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
 <path>/snpsac/src/geometric_saccade_detector/src</path>
 <path>/snpsac/src/saccade_analysis/src-python</path>
@@ -14,4 +14,7 @@
 <path>/snpsac/src/flydra_db/src</path>
 </pydev_pathproperty>
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.6</pydev_property>
+<pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
+<path>/data/work/scm/usrpyplus/lib/python2.6/site-packages/numpy</path>
+</pydev_pathproperty>
 </pydev_project>
